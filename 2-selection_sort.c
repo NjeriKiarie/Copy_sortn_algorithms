@@ -1,19 +1,5 @@
 #include "sort.h"
 
-/**
- * swap_int - swaps values of two integerds
- * @c: takes the 1st int
- * @k: takes the secong intager
- */
-
-void swap_int(int *c, int *k)
-{
-	int temp;
-
-	temp = *c;
-	*c = *k;
-	*k = temp;
-}
 
 /**
  * selection_sort - This sorts an arrey of integers in asceding
@@ -48,4 +34,19 @@ void selection_sort(int *array, size_t size)
 			print_array(array, size);
 		}
 	}
+}
+
+/**
+ * swap_int - swaps values of two integerds.
+ * @c: takes the 1st int
+ * @k: takes the secong intager
+ */
+
+void swap_int(int *c, int *k)
+{
+	int temp;
+
+	temp = *c;
+	*c = *k;
+	*k = temp;
 }
